@@ -28,11 +28,11 @@ async function* readStdin() {
     }
 }
 
-async function readMany(number) {
-    const iter = this._iter = (this._iter || readStdin())
+async function readMany(number, iter = void 0) {
+    const _iter = iter || (this._iter = (this._iter || readStdin()))
     const inputs = []
     for (let i = 0; i < number; i += 1) {
-        inputs.push((await iter.next()).value)
+        inputs.push((await _iter.next()).value)
     }
     return inputs
 }
