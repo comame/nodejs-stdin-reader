@@ -8,4 +8,5 @@ const iter = readStdin()
 await readMany(0, iter)
 ```
 
-[minified](https://raw.githubusercontent.com/comame/nodejs-stdin-reader/master/main.min.js)
+[interactive](https://raw.githubusercontent.com/comame/nodejs-stdin-reader/master/interactive.min.js)
+[non-interactive](https://raw.githubusercontent.com/comame/nodejs-stdin-reader/master/noninteractive.min.js)
