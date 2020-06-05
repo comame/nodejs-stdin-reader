@@ -18,7 +18,7 @@ async function* readStdin() {
         let buffer = ''
         for (const char of line) {
             if (char == ' ' || char == '\n') {
-                yield buffer
+                if (buffer.length != 0) yield buffer
                 buffer = ''
             } else {
                 buffer += char
